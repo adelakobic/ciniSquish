@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Comic Finder</title>
+    <!-- Semantic UI link -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <!-- Google Fonts link for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Uchen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
-
 
 <body> 
     <header>Comic Finder</header>
@@ -15,42 +20,62 @@
 
     <!--Marvel banner-->
     <hero></hero>
-    <main>
+    <main class="main">
         <container>
         <hr> <!-- draws a line on page -->
         <!-- Cards displaying comics: name, image, author -->
         <card>
-            <h2>Comic Title 1</h2>
-            <img>IMAGE</img>
-            <p id="author">Author: Stan Lee</p>
+            <h2 class="title">Comic Title 1</h2>
+            <img src="./assets/images/spiderman.jpg.webp"></img>
+            <p class="author">Author: Stan Lee</p>
+            <p class="character">Main character: Spiderman</p>
         </card>
-        <button>More Info</button> <!-- link to page 3 more info on comic -->
-        <div></div>
+        <br>
+        
+        <div class="ui buttons"> <!-- link to page 3 more info on comic -->
+            <button class="ui blue button">More info</button>
+            <div class="or"></div>
+            <button class="ui yellow button">Save to Favourite's</button>
+        </div>
+        <br>
+
         <card>
             <h2>Comic Title 2</h2>
-            <img>IMAGE</img>
+            <img src="./assets/images/Captain_America_(1968)_100.jpg"></img>
             <p id="author">Author: Stan Lee</p>
+            <p class="character">Main character: Captain America</p>
         </card>
-        <div>
+        <div class="ui buttons"> <!-- link to page 3 more info on comic -->
+            <button class="ui blue button">More info</button>
+            <div class="or"></div>
+            <button class="ui yellow button">Save to Favourite's</button>
         </div>
-        <button>More Info</button>
+        <br>
 
         <card>
             <h2>Comic Title 3</h2>
-            <img>IMAGE</img>
+            <img src="./assets/images/shangChi.jpg"></img>
             <p id="author">Author: Stan Lee</p>
+            <p class="character">Main character: Shang Chi</p>
         </card>
-
-        <button>More Info</button>
+        <br>
+        <div class="ui buttons"> <!-- link to page 3 more info on comic -->
+            <button class="ui blue button">More info</button>
+            <div class="or"></div>
+            <button class="ui yellow button">Save to Favourite's</button>
+        </div>
         <br>
 
         </container>
+
+        <container>
         <!-- Find comics to refresh the ones on page -->
-        <button>Find new Comics</button>
+        <button class="fluid ui red button">Find new Comics   🔍 </button>
         <br>
 
         <!-- link to Reading List of favourites -->
-        <button>My Reading List</button>
+        <button class="fluid ui yellow button"></i>My Reading List</button>
+        </container>
         <br>
         <br>
 
