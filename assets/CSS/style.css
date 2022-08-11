@@ -1,0 +1,15 @@
+header {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 36px;
+}
+.main {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+};
+
+.title {
+    font-family: 'Roboto Mono', monospace;
+} /* title font */
+.author {
+    font-weight: bolder;
+}
