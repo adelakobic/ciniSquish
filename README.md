@@ -40,7 +40,7 @@ Actual preview of ---.
 * geting 
 
 ## Changes made to the code 𝌡
-* buttons created and colors set - first draft - Dela
+* buttons created and colors set - first draft - Dela.
 
 ## Link to the deployed website 💻
 
