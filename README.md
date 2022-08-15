@@ -43,12 +43,15 @@ Actual preview of ---.
 
 * buttons created and colors set - first draft - Dela
 * HTML pages 2 and 3 have been created 11/8/22 - Dela 
+* Cards have been created for the comics - Amal
+* Background colours, coulours for the headings have been set - Amal
+
 
 
 ## Link to the deployed website 💻
 
 ## Credits 💃🏻
-* Code created by : Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani 
+* Code created by : Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani Kazingizi
 * Picture credits as follows: 
     * Pikisuperstar. (2022, July 6) Freepik.com. <a href="https://www.freepik.com/vectors/abstract-mountain">Abstract mountain vector created by pikisuperstar - www.freepik.com</a>
     (mountain picture) 

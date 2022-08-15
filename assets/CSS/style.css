@@ -1,7 +1,25 @@
+
+main {
+    background-color: black;
+}
+
 header {
     font-family: 'Roboto Mono', monospace;
     font-size: 36px;
 }
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.title {
+    font-family: 'Roboto Mono', monospace;
+}
+
 .main {
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
