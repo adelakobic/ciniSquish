@@ -51,7 +51,7 @@ Actual preview of ---.
 ## Link to the deployed website 💻
 
 ## Credits 💃🏻
-* Code created by : Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani 
+* Code created by : Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani Kazingizi
 * Picture credits as follows: 
     * Pikisuperstar. (2022, July 6) Freepik.com. <a href="https://www.freepik.com/vectors/abstract-mountain">Abstract mountain vector created by pikisuperstar - www.freepik.com</a>
     (mountain picture) 
