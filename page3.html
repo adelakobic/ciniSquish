@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     
+    <meta charset="UTF-8">
+    <title>Comic Finder</title>
     <!-- Semantic UI link -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
@@ -46,6 +48,15 @@
     </container>
     <div class="ui card">
         <div class="image">
+    <header>Comic Finder</header>
+    <!--Marvel banner-->
+    <hero></hero>
+    <main class="main">
+        <h1>You have chosen:</h1>
+        <container>
+        <hr> <!-- draws a line on page -->
+        <!-- Cards displaying comic chosen: name, image, author -->
+        <card>
             <h2 class="title">Shang Chi<i class="fa-regular fa-square-star"></i></h2>
             <img src="./assets/images/shangChi.jpg"></img>
             <p class="author">Author: Stan Lee</p>
@@ -69,6 +80,7 @@
     </container>
     <br>
     <br>
+        <br>
         <!-- Map section -->
         <card>
             <h2>Where can I buy this comic?</h2>
@@ -77,9 +89,22 @@
 
         </card>
         
+        <br>
+        </container>
+
+        <container>
+        <!-- Find comics to refresh the ones on page -->
+        <a href="index.html" class="fluid ui red button">Find new Comics   🔍 </a>
+        <br>
+
+
+        </container>
+        <br>
+        <br>
+
     </main>
 
-    <footer>💻 Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani 💻</footer>
+    <footer>💻 Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani Kazingizi 💻</footer>
    
 </body>
 </html>
