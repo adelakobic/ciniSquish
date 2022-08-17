@@ -157,9 +157,51 @@
         </div>
             <br>
             <br>   
+
+            <div id="map" style="width: 100%; height: 700px;"></div>
+
+            <script type="text/javascript">
+        // adding the locations of the Comic book stores in Birmingham
+              var locations = [
+                ['Forbidden Planet Birmingham', 52.4817, -1.8965, 4],
+                ['Worlds Apart', 52.4755, -1.8996, 5],
+                ['Second City Comics', 52.4755, -1.8857, 3],
+                ['The Graded Gallery', 52.4483, -1.8862, 2],
+                ['Geek Retreat Birmingham', 52.4879, -1.9084, 1]
+              ];
+        // The initial map view is centred at birmingham
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: new google.maps.LatLng(52.4862, -1.8904),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+              });
+        // the Info window will have the names and (maybe star rating) of the comic book stores
+              var infowindow = new google.maps.InfoWindow();
+          
+              var marker, i;
+        // Instead of having to re-write the following code i used a for loop.      
+              for (i = 0; i < locations.length; i++) {  
+                marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                  map: map
+                });
+        // For the info window to pop up it requires a listner (when you hover over a marker it reveals the info)        
+                google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+                  return function() {
+                    infowindow.setContent(locations[i][0]);
+                    infowindow.open(map, marker);
+                  }
+                })(marker, i));
+              }
+            </script>
+            <hr>
+
         
     
     </main>
+   
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDYq0LLuREn8K1pp1RHMbSTz3c5Scqhh3Y" 
+    type="text/javascript"></script>
 
     <footer>💻 Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani Kazingizi 💻</footer>
 </body>
