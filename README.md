@@ -34,7 +34,7 @@ THEN I can navigate straight to my favourites list.
 
 ## Assets 📷
 Actual preview of ---. 
-![link]()
+![https://adelakobic.github.io/ciniSquish/]()
 
 ## Problems encountered 🤯
 * geting 
@@ -45,16 +45,17 @@ Actual preview of ---.
 * HTML pages 2 and 3 have been created 11/8/22 - Dela 
 * Cards have been created for the comics - Amal
 * Background colours, coulours for the headings have been set - Amal
+* JS code begun for Marvel API - Dela (with tutor support)
+* JS code - Google API - Ilyaas 
 
 
 
 ## Link to the deployed website 💻
+![https://adelakobic.github.io/ciniSquish/]()
 
 ## Credits 💃🏻
 * Code created by : Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani Kazingizi
-* Picture credits as follows: 
-    * Pikisuperstar. (2022, July 6) Freepik.com. <a href="https://www.freepik.com/vectors/abstract-mountain">Abstract mountain vector created by pikisuperstar - www.freepik.com</a>
-    (mountain picture) 
+
 
 ## Licence 🪪
 * MIT licence is used for this project.

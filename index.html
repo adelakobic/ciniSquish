@@ -119,6 +119,26 @@
     <br>
 
 </main>
+ <!-- JS links for semantic UI-->
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
+ <!-- Own JS link-->
+ <script src="./assets/JS/page1.js"></script>
+ 
+
+ <!-- script tags for Modal -->
+ <script>
+   $('[tiny-modal-target]').on('click', function() {
+     var target = $(this).data('modal-target');
+     $('.tiny.modal').modal('show');
+   })
+
+   $('[small-modal-target]').on('click', function() {
+     var target = $(this).data('modal-target');
+     $('.small.modal').modal('show');
+   })
+ </script>
 
 <footer>💻 Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani 💻</footer>
 
