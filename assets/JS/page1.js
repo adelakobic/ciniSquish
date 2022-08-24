@@ -83,8 +83,31 @@ function searchForComic(characterId) {
             .modal('show');
         }
     });
+      // creating elements card, div appending child
+  // parent element
+  function displayComics(){
+    const displayResults = document.getElementById("display");
+  
+    let comicTitle = document.getElementById("titleComic");
+    let comicImage = document.getElementById("comicImg");
+    let comicAuthor = document.getElementById("comicAuth");
+    //set the text of the link
+    let newTitle = document.createElement("div");
+    newTitle.textContent = (displayResults);
+  
+    let newImage = document.createElement("img");
+    newImage.src = 'http://i.annihil.us/u/prod/marvel/i/mg/';
+  
+    let newAuthor = document.createElement("div");
+    newAuthor.textContent = (displayResults);
+  
+    //append the link to card, div etc
+    displayResults.appendChild(newTitle, newImage, newAuthor);
+    $('#refresh').click(function(){
+      $('div').append("<div[displayResults]</div>")
+    })
+    }
 }
-
 
 
 searchForm.addEventListener('submit', getCharacter);

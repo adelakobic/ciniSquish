@@ -92,22 +92,24 @@
 </container>
 <br>
 <br>
-<div class="form">
-    <form  id="connectionForm">
-        <label for="character">Choose your hero:</label>
-        <input required type="text" name="name" value="Search e.g. Hulk, Spiderman, Iron Man, Shang Chi etc...)" id="name">
-    <br>
-    </form>
-</div>
-    
-<br>
-<br>
 
 <container>
-    <!-- Find comics to refresh the ones on page -->
-    <button class="fluid ui red button">Find new Comics   🔍 </button>
+    <!-- Find comics to refresh the ones on page ADDED in-->
     <br>
     <br>
+    <div class="container">
+      <form id="search-form">
+          <input type="text" id="search-input-box" placeholder="Type in character or comic here"/>
+          <br>
+          <br>
+          <button class="fluid ui red button" id="refresh" type="submit">Find new Comics   🔍 
+          </button>
+          </div>
+      </form>
+      
+  </div>
+  </container>
+  <br>
 
 
     <!-- link to Reading List of favourites -->
@@ -129,7 +131,7 @@
 
  <!-- script tags for Modal -->
  <script>
-   $('[tiny-modal-target]').on('click', function() {
+   $('[tiny-modal-target]').on('click', function(){
      var target = $(this).data('modal-target');
      $('.tiny.modal').modal('show');
    })
@@ -140,7 +142,7 @@
    })
  </script>
 
-<footer>💻 Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani 💻</footer>
+<footer>💻 Developed by Mahmood Hamid, Amal Hirsi, Ilyaas Abdila, Adela Kobic, Hlangulani Kazingizi 💻</footer>
 
 </body>
 </html>
