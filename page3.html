@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./assets/CSS/style.css">
     <!-- Font Awsome link -->
     <link rel="styleshet" href="https://kit.fontawesome.com/5e301e62cb.js" crossorigin="anonymous">
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDYq0LLuREn8K1pp1RHMbSTz3c5Scqhh3Y" 
+    type="text/javascript"></script>
 </head>
 
 <body> 
@@ -39,31 +41,45 @@
             </div>
             </div>
             </div>
-         <br></br>
-
+         
+    
         <container>
         <!-- Cards displaying comic chosen: name, image, author -->
-        <card class="map-card">
+    </card>
+    <br>
+    </container>
     <div class="ui card">
         <div class="image">
-          <h2 class="title">Shang Chi<i class="fa-regular fa-square-star"></i></h2>
+    <header>Comic Finder</header>
+    <!--Marvel banner-->
+    <hero></hero>
+    <main class="main">
+        <h1>You have chosen:</h1>
+        <container>
+        <hr> <!-- draws a line on page -->
+        <!-- Cards displaying comic chosen: name, image, author -->
+        <card>
+            <h2 class="title">Shang Chi<i class="fa-regular fa-square-star"></i></h2>
             <img src="./assets/images/shangChi.jpg"></img>
             <p class="author">Author: Stan Lee</p>
             <p class="character">Main character: Shang Chi</p>
             <p class="blurb">Shang Chi begins his training in the martial arts. He is sent to assasinate the leader of the Iron Gang.</p> 
             <p>After fulfiling his mission, a a traumatized Shang Chi escapes to San Franciso, where he adopts the name "Shaun". Everything was going well until some one from his past turns up unexepectedly.</p>
             <div></div>
+        </card>
         <br>
-        <div class="ui fluid buttons"> <!-- link to page 3 more info on comic -->
+        </div>
+        <br>
+        <div class="ui buttons"> <!-- link to page 3 more info on comic -->
             <button class="ui green button">🔎  FIND Comic Store  🛒</button>
+        </div>
         <br>
-            </div>
-            <a href="./page2.html" class="ui fluid yellow button">Add to Favourites<i class="fa-regular fa-square-star"></i></a>
-    </div>
-</div>
-</div>
-    </card>
-</container>
+            <a href="./page2.html" class="ui yellow button">Add to Favourites<i class="fa-regular fa-square-star"></i></a>
+
+        </div>
+      </div>
+
+    </container>
     <br>
     <br>
         <br>
@@ -72,6 +88,42 @@
             <h2>Where can I buy this comic?</h2>
             <br>
             <p>MAP AREA</p>
+            <div id="map" style="width: 100%; height: 700px; position: relative;"></div>
+
+            <script type="text/javascript">
+        // adding the locations of the Comic book stores in Birmingham
+              var locations = [
+                ['Forbidden Planet Birmingham', 52.4817, -1.8965, 4],
+                ['Worlds Apart', 52.4755, -1.8996, 5],
+                ['Second City Comics', 52.4755, -1.8857, 3],
+                ['The Graded Gallery', 52.4483, -1.8862, 2],
+                ['Geek Retreat Birmingham', 52.4879, -1.9084, 1]
+              ];
+        // The initial map view is centred at birmingham
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: new google.maps.LatLng(52.4862, -1.8904),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+              });
+        // the Info window will have the names and (maybe star rating) of the comic book stores
+              var infowindow = new google.maps.InfoWindow();
+          
+              var marker, i;
+        // Instead of having to re-write the following code i used a for loop.      
+              for (i = 0; i < locations.length; i++) {  
+                marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                  map: map
+                });
+        // For the info window to pop up it requires a listner (when you hover over a marker it reveals the info)        
+                google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+                  return function() { 
+                    infowindow.setContent(locations[i][0]);
+                    infowindow.open(map, marker);
+                  }
+                })(marker, i));
+              }
+            </script>
 
         </card>
         
@@ -82,6 +134,8 @@
         <!-- Find comics to refresh the ones on page -->
         <a href="index.html" class="fluid ui red button">Find new Comics   🔍 </a>
         <br>
+
+
         </container>
         <br>
         <br>
